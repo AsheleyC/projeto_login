@@ -5,41 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container ">
-        <img src="../logo.png" width="150px">
-        <h1>Cadastre-se</h1>
+<body class="bg-light">
 
-        <label for="input_nome" >Nome Completo:</label>
-        <br>
-        <input type="text" id="input_nome">
+    <div class="container mt-5" style="max-width: 500px;">
+        <div class="text-center mb-4">
+            <img src="../logo.png" width="120">
+            <h2 class="mt-2">Cadastre-se</h2>
+        </div>
 
-        <br>
+        <label for="input_nome" class="form-label">Nome Completo</label>
+        <input type="text" id="input_nome" class="form-control mb-3" placeholder="Nome Completo">
 
-        <label for="input_email">Email:</label>
-        <br>
-        <input type="text" id="input_email">
+        <label for="input_email" class="form-label">E-mail</label>
+        <input type="email" id="input_email" class="form-control mb-3" placeholder="E-mail">
 
-        <br>
+        <label for="input_senha" class="form-label">Senha</label>
+        <input type="password" id="input_senha" class="form-control mb-4" placeholder="Senha">
 
-        <label for="input_senha">Senha:</label>
-        <br>
-        <input type="password" id="input_senha">
+        <button id="btn_cadastrar" class="btn btn-primary w-100 mb-2">Cadastrar</button>
+        <button id="btn_logar" class="btn btn-outline-primary w-100">Fazer Login</button>
 
-        <br>
-        <br>
-
-        <button id="btn_cadastrar" class="btn_cadastrar">Cadastrar</button>
-        <button id="btn_logar" class="btn_logar">Fazer Login</button>
-
-        <p id="resultado" class="resultado">  </p>
+        <p id="resultado" class="text-center mt-3 text-danger"></p>
     </div>
-</body>
 
-<script src="cod_index.js"></script>
+    <script src="cod_index.js"></script>
+</body>
 
 </html>
