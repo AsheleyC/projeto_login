@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           10.4.32-MariaDB - mariadb.org binary distribution
+-- Versão do servidor:           12.0.2-MariaDB - mariadb.org binary distribution
 -- OS do Servidor:               Win64
--- HeidiSQL Versão:              12.10.0.7000
+-- HeidiSQL Versão:              12.12.0.7122
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -32,22 +32,10 @@ CREATE TABLE IF NOT EXISTS `contatos` (
   `data` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` varchar(50) NOT NULL DEFAULT 'Aguardando Leitura',
   PRIMARY KEY (`id_contatos`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
--- Copiando dados para a tabela gourmetify.contatos: ~11 rows (aproximadamente)
+-- Copiando dados para a tabela gourmetify.contatos: ~0 rows (aproximadamente)
 DELETE FROM `contatos`;
-INSERT INTO `contatos` (`id_contatos`, `nome`, `email`, `telefone`, `assunto`, `mensagem`, `data`, `status`) VALUES
-	(1, 'Asheley Tombolo', 'asheley@gmail.com', '', 'dados', 'cadastrando dados', '2025-11-18 11:45:36', 'Aguardando Leitura'),
-	(2, 'Natália Calixto', 'natalia@gmail.com', '1899123456789', 'Professores', 'Nossos professores são muito legais', '2025-11-18 11:47:46', 'Aguardando Leitura'),
-	(3, 'Asheley Tombolo', 'asheley@gmail.com', '', 'Professores', 'Nossos professores são muito legais', '2025-11-18 13:08:51', 'Aguardando Leitura'),
-	(4, 'Matheus Oliveira', 'matheus@gmail.com', '', 'Não aguento mais ', 'Não aguento mais essas pessoas que só sabem reclamar ', '2025-11-18 13:43:01', 'Aguardando Leitura'),
-	(5, 'Matheus Oliveira', 'matheus@gmail.com', '18999999999', 'Não aguento mais ', 'Não aguento mais essas pessoas que só sabem reclamar ', '2025-11-18 13:43:44', 'Aguardando Leitura'),
-	(6, 'Bruno Ferreira', 'bruno@gmail.com', '', 'Professores', 'Nossos professores são muito legais', '2025-11-18 14:12:01', 'Aguardando Leitura'),
-	(7, 'Bruno Ferreira', 'bruno@gmail.com', '', 'Professores', 'Nossos professores são muito legais', '2025-11-18 14:16:37', 'Aguardando Leitura'),
-	(8, 'Bruno Ferreira', 'bruno@gmail.com', '24', 'Professores', 'Nossos professores são muito legais', '2025-11-18 14:16:41', 'Aguardando Leitura'),
-	(9, 'Bruno Ferreira', 'bruno@gmail.com', '24', 'Professores', 'Nossos professores são muito legais', '2025-11-18 14:16:42', 'Aguardando Leitura'),
-	(10, 'Bruno Ferreira', 'bruno@gmail.com', '24', 'Professores', 'Nossos professores são muito legais', '2025-11-18 14:16:43', 'Aguardando Leitura'),
-	(11, 'Asheley', 'asheley@gmail.com', '189', 'Professores', 'Nossos professores são muito legais', '2025-11-18 15:44:20', 'Aguardando Leitura');
 
 -- Copiando estrutura para tabela gourmetify.usuarios
 DROP TABLE IF EXISTS `usuarios`;

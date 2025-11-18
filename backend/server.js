@@ -28,7 +28,7 @@ server.post('/cadastro', async (req, res) => {
             return res.json({ "resposta": 'Preencha uma senha com no mínimo 6 caracteres' })
         } else if (email < 6) {
             return res.json({ "resposta": 'Preencha um email' })
-        } else if (nome_user < 4) {
+        } else if (nome_user.length < 4) {
             return res.json({ "resposta": 'Preencha um nome' })
         } else if (!email.includes('@')) {
             return res.json({ "resposta": 'Preencha um email válido' })
