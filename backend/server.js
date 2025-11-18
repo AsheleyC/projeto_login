@@ -32,6 +32,8 @@ server.post('/cadastro', async (req, res) => {
             return res.json({ "resposta": 'Preencha um nome' })
         } else if (!email.includes('@')) {
             return res.json({ "resposta": 'Preencha um email válido' })
+        } else if (email.includes(' ') == true) {
+            return res.json({ "resposta": 'Preencha um email válido' })
         }
 
         //verificar se o email já existe
