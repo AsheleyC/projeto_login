@@ -81,5 +81,7 @@ server.post('/login', async (req, res) => {
 
     } catch (error) {
         console.log(error)
+
+        return res.json({ "resposta": "Erro inesperado. Tente novamente mais tarde." })
     }
 })
