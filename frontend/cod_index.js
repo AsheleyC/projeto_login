@@ -1,5 +1,6 @@
 //Criar um evento para quando clicar no botão
 const btn_cad = document.getElementById('btn_cadastrar')
+const btn_log = document.getElementById('btn_logar')
 
 btn_cad.addEventListener('click', async () => {
     //Primeira Etapa: Pegar informações dos inputs
@@ -32,3 +33,6 @@ btn_cad.addEventListener('click', async () => {
 
 })
 
+btn_log.addEventListener('click', ()=>{
+    window.location.href="login.html"
+})
