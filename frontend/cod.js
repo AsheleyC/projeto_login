@@ -1,4 +1,5 @@
 const btn_entrar = document.getElementById('btn_entrar')
+const btn_cad = document.getElementById('btn_cadastro')
 
 btn_entrar.addEventListener('click', async () => {
     const email = document.getElementById('input_email').value
@@ -25,4 +26,7 @@ btn_entrar.addEventListener('click', async () => {
         alert(dados.resposta)
     }
 
+})
+btn_cad.addEventListener('click', ()=>{
+    window.location.href="index.html"
 })
