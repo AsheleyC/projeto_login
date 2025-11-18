@@ -66,9 +66,9 @@ server.post('/login', async (req, res) => {
 
         senha = senha.trim()
         if (senha == '') {
-            return res.json({ "resposta": "Preencha uma senha Válida" })
+            return res.json({ "resposta": "Usuário ou senha inválida" })
         } else if (senha.length < 6) {
-            return res.json({ "resposta": "Preencha uma senha com no mínimo 6 carcteres" })
+            return res.json({ "resposta": "Usuário ou senha inválida" })
         }
 
         const hash = crypto.createHash('sha256').update(senha).digest('hex')
